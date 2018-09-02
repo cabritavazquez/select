@@ -8,11 +8,13 @@ Esta llamada duerme un proceso hasta que algún elemento de un conjunto de descr
 Para hacer funcionar nuestro programa, primero debemos crear las dos fifos:
 
 > mkfifo <nombre_fifo1>
+
 > mkfifo <nombre_fifo2>
 
 Despues compilar y ejecutar nuestro programa select.c y por ultimo escribir en ambas fifos mediante la función cat:
 
 > cat><nombre_fifo1>
+
 > cat><nombre_fifo2>
 
 Hasta que en ambas fifos no hagamos el cat nuestro programa no funcionará.
